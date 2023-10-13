@@ -5,7 +5,7 @@ scustpost_revision    := "0"  # Revision number for use by Resellers or customer
 # Product             : Mill
 # Machine Name        : Generic
 # Control Name        : Fanuc
-# Description         : Generic 4 Axis Mill Post
+# Description         : Generic 4 Axis Mill Post with 4x disabled
 # 4-axis/Axis subs.   : Yes
 # 5-axis              : No
 # Subprograms         : Yes
@@ -316,9 +316,9 @@ arctypeyz$   : 2     #Arc center type YZ plane 1=abs, 2=St-Ctr, 3=Ctr-St, 4=unsi
 # --------------------------------------------------------------------------
 # Rotary Axis Settings
 # --------------------------------------------------------------------------
-read_md      : yes$  #Set rotary axis switches by reading Machine Definition?
+read_md      : no$  #Set rotary axis switches by reading Machine Definition?
 vmc          : 1     #SET_BY_MD 0 = Horizontal Machine, 1 = Vertical Mill
-rot_on_x     : 1     #SET_BY_MD Default Rotary Axis Orientation
+rot_on_x     : 0     #SET_BY_MD Default Rotary Axis Orientation
                      #0 = Off, 1 = About X, 2 = About Y, 3 = About Z
 rot_ccw_pos  : 0     #SET_BY_MD Axis signed dir, 0 = CW positive, 1 = CCW positive
 index        : 0     #SET_BY_MD Use index positioning, 0 = Full Rotary, 1 = Index only
@@ -327,7 +327,7 @@ use_frinv    : no$   #SET_BY_CD Use Inverse Time Feedrates in 4 Axis, (0 = no, 1
 maxfrdeg     : 2000  #SET_BY_MD Limit for feed in deg/min
 maxfrinv     : 999.99#SET_BY_MD Limit for feed inverse time
 maxfrinv_m   : 99.99 #SET_BY_MD Maximum feedrate - inverse time
-frc_cinit    : yes$  #Force C axis reset at toolchange
+frc_cinit    : no$  #Force C axis reset at toolchange
 ctol         : 225   #Tolerance in deg. before rev flag changes
 ixtol        : 0.01  #Tolerance in deg. for index error
 frdegstp     : 10    #Step limit for rotary feed in deg/min
