@@ -1087,7 +1087,7 @@ pretract        #End of tool path, toolchange
       pbld, n$, sccomp, *sm05, psub_end_mny, e$
       if convert_rpd$, pconvert_rpd
       pbld, n$, [if gcode$, sgfeed], sgabsinc, sgcode, *sg28ref, "Z0.", [if gcode$, feed], scoolant, e$
-      if nextop$ = 1003 | tlchg_home, pbld, n$, *sg28ref, "X0.", "Y0.", protretinc, e$
+      if nextop$ = 1003 | tlchg_home, pbld, n$, *sg28ref, "Y0.", protretinc, e$
       else, pbld, n$, protretinc, e$
       absinc$ = sav_absinc
       coolant$ = sav_coolant
