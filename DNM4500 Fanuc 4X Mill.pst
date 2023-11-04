@@ -1,7 +1,7 @@
 [POST_VERSION] #DO NOT MOVE OR ALTER THIS LINE# V26.00 P0 E1 W26.00 T1683923054 M26.00 I0 O1
 
 scustpost_revision    := "0"  # Revision number for use by Resellers or customers.
-# Post Name           : Generic Fanuc 4X Mill.pst
+# Post Name           : DNM4500 Fanuc 4X Mill.pst
 # Product             : Mill
 # Machine Name        : Generic
 # Control Name        : Fanuc
